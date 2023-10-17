@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesAndTablesApi", "NamesAndTablesApi.csproj", "{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28853E3D-D7CC-499E-8B32-56892B9CFCA4}
+	EndGlobalSection
+EndGlobal
