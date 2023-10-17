@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesAndTablesApi", "NamesAndTablesApi.csproj", "{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesAndTablesPersistence", "NamesAndTablesPersistence\NamesAndTablesPersistence.csproj", "{438A1E61-5467-42FB-B2F7-BC4577AF8454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A70A7AFE-C770-4C11-9E0F-F7C732FADBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438A1E61-5467-42FB-B2F7-BC4577AF8454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438A1E61-5467-42FB-B2F7-BC4577AF8454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438A1E61-5467-42FB-B2F7-BC4577AF8454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438A1E61-5467-42FB-B2F7-BC4577AF8454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

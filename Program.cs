@@ -1,4 +1,6 @@
 
+using NamesAndTablesApi.Middlewares;
+
 namespace NamesAndTablesApi
 {
 	public class Program
@@ -6,6 +8,12 @@ namespace NamesAndTablesApi
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
+
+			var configurationBuilder = builder.Configuration.SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+				.AddJsonFile("Properties/appsettings.json")
+				.AddJsonFile($"Properties/appsettings.{builder.Environment.EnvironmentName}.json")
+				.AddEnvironmentVariables()
+				.Build();
 
 			// Add services to the container.
 
@@ -27,7 +35,9 @@ namespace NamesAndTablesApi
 
 			app.UseAuthorization();
 
-
+			app.UseMiddleware(typeof(ExceptionMiddleware));
+			app.Use(async (context, next) => await ControllerExceptionMiddleware.HandleControllerExceptions(context, next));
+			
 			app.MapControllers();
 
 			app.Run();
